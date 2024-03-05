@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+  padding-inline: var(--spacer);
+  padding-block: var(--spacer-lg);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacer);
+}
+.navIcon,
+.mobileBtn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: var(--borderRadius-sm);
+  background-color: var(--color-primary20);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.mobileBtn::after {
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  border-radius: var(--borderRadius-md);
+  background: currentColor;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: var(--transition);
+}
+.mobileBtn:focus,
+.mobileBtn:hover,
+.mobileBtnActive {
+  outline: none;
+  background: var(--color-bg);
+  color: var(--color-accent);
+  box-shadow: var(--boxShadow-sm);
+  border-color: var(--color-accent);
+}
+.mobileBtnActive::after {
+  transform: rotate(90deg);
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 8px currentColor, 0 -8px currentColor;
+}
+.navLink:nth-child(3) {
+  background: none;
+  border: none;
+  font-size: var(--fontSize-sm);
+  cursor: pointer;
+  padding: 0;
+}
+.navMobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    padding-inline: var(--spacer);
+    background-color: var(--color-bg);
+    box-shadow: var(--boxShadow-sm);
+    border-radius: var(--borderRadius-sm);
+    transform: translateX(-10px);
+    opacity: 0;
+    pointer-events: none;
+}
+.navMobileActive {
+    transition: var(--transition);
+    transform: initial;
+    opacity: 1;
+    pointer-events: initial;
+    z-index: 100;
+}

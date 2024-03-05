@@ -1,0 +1,26 @@
+.userPost {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacer-md);
+  margin-bottom: var(--spacer-md);
+}
+.file {
+    margin-bottom: var(--spacer);
+}
+.preview {
+    border-radius: var(--borderRadius-sm);
+    background-size: cover;
+    background-position: center center;
+}
+.preview::after {
+    content: '';
+    display: block;
+    height: 0px;
+    padding-bottom: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .userPost {
+    grid-template-columns: 1fr;
+  }    
+}

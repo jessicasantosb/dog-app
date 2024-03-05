@@ -1,0 +1,7 @@
+.button {
+  margin-block: var(--spacer-md);
+  padding: var(--spacer);
+  text-transform: uppercase;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
