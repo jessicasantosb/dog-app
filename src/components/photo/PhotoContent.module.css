@@ -1,0 +1,37 @@
+.photo {
+  height: 550px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 550px 400px;
+  grid-template-rows: auto 1fr auto;
+  border-radius: var(--borderRadius-sm);
+  background: var(--color-bg);
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: scaleUp .3s forwards;
+}
+@keyframes scaleUp {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+.details {
+  padding-inline: var(--spacer-md);
+  padding-top: var(--spacer-md);
+}
+.img {
+  grid-row: 1/4;
+}
+
+@media screen and (max-width: 700px) {
+  .photo {
+    height: auto;
+    max-height: calc(100vh - var(--spacer-lg));
+    grid-template-columns: minmax(250px, 400px);
+  }
+  .img {
+    grid-row: 1;
+  }
+}

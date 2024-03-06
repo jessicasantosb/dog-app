@@ -1,18 +1,14 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
+import LogoIcon from "../assets/logo.svg?react";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={`${styles.div} container`}>
+    <footer className={`${styles.footer} container`}>
         <Link className={styles.logo} to="/">
-          Logo
+          <LogoIcon />
         </Link>
-        <Link className={styles.login} to="/login">
-          Login / criar
-        </Link>
-      </div>
     </footer>
   );
 }

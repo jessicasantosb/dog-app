@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import LogoIcon from "../assets/logo.svg?react";
 import ThemeToggleBtn from "./theme toggle/ThemeToggleBtn";
 import { UserContext } from "../UserContext";
 
@@ -11,7 +12,7 @@ function Header() {
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
         <Link className={styles.logo} to="/">
-          Logo
+          <LogoIcon />
         </Link>
         <div className={styles.navLinks}>
           {data ? (

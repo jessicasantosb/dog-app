@@ -1,12 +1,9 @@
 .footer {
-  width: 100%;
   padding-inline: var(--spacer);
   padding-block: var(--spacer-lg);
   box-shadow: var(--boxShadow-sm-top);
+  text-align: center;
 }
-.div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacer);
+.logo svg {
+  height: 40px;
 }

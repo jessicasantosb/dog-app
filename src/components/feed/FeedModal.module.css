@@ -1,0 +1,19 @@
+.modal {
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  padding-inline: var(--spacer-lg);
+  padding-block: var(--spacer-md);
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    padding-inline: var(--spacer-md);
+    padding-block: var(--spacer);
+  }
+}
