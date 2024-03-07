@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacer-sm);
+}
+.textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    resize: none;
+    transition: var(--transition);
+}
+.button svg {
+    height: 40px;
+    width: 40px;
+}

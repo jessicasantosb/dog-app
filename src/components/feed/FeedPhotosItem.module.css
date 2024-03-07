@@ -15,7 +15,7 @@
     grid-row: initial;
   }
 }
-.photo img {
+.photo > div {
   grid-area: 1 / 1;
 }
 .visualization {
@@ -36,7 +36,6 @@
     margin-right: var(--spacer);
     background: url('../../assets/visualization.svg') no-repeat;
 }
-
 .photo:hover .visualization {
     display: flex;
 }

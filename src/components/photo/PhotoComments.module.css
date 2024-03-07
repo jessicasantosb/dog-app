@@ -1,0 +1,10 @@
+.comments {
+    overflow-y: auto;
+    word-break: break-word;
+    padding-inline: var(--spacer-lg);
+    padding-block: var(--spacer);
+}
+.comment {
+    margin-bottom: var(--spacer);
+    line-height: 1.2;
+}

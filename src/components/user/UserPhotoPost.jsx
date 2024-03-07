@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./PhotoPost.module.css";
+import styles from "./UserPhotoPost.module.css";
 import Input from "../forms/Input";
 import Button from "../forms/Button";
 import useForm from "../../hooks/useForm";

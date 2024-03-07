@@ -4,10 +4,10 @@ import { UserContext } from "../../UserContext";
 import { Navigate, Route, Routes } from "react-router-dom";
 import UserHeader from "./UserHeader";
 import Feed from "../feed/Feed";
-import UserPost from "./PhotoPost";
+import UserPost from "./UserPhotoPost";
 
 function User() {
-  const { login } = React.useContext(UserContext);
+  const { login, data } = React.useContext(UserContext);
 
   return (
     <>
@@ -15,7 +15,7 @@ function User() {
         <section className={`${styles.user}  container`}>
           <UserHeader />
           <Routes>
-            <Route path="/" element={<Feed />} />
+            <Route path="/" element={<Feed user={data.id}/>} />
             <Route path="postar" element={<UserPost />} />
           </Routes>
         </section>
