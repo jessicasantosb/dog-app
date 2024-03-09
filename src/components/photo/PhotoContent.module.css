@@ -9,7 +9,7 @@
   overflow: hidden;
   opacity: 0;
   transform: scale(0.8);
-  animation: scaleUp .3s forwards;
+  animation: scaleUp 0.3s forwards;
 }
 @keyframes scaleUp {
   to {
@@ -17,12 +17,18 @@
     transform: initial;
   }
 }
+.single.photo {
+  grid-template-columns: 1fr;
+}
 .details {
   padding-inline: var(--spacer-md);
   padding-top: var(--spacer-md);
 }
 .img {
   grid-row: 1/4;
+}
+.single .img {
+  grid-row: 1;
 }
 
 @media screen and (max-width: 700px) {

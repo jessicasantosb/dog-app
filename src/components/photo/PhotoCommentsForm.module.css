@@ -3,6 +3,9 @@
     flex-direction: column;
     margin: var(--spacer-sm);
 }
+.single.form {
+    margin-inline: 0;
+}
 .textarea {
     display: block;
     width: 100%;

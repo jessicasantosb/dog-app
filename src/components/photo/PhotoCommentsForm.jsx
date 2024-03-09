@@ -5,7 +5,7 @@ import SendIcon from "../../assets/send.svg?react";
 import { COMMENT_POST } from "../../Api";
 import Error from "../interfaces/Error";
 
-function PhotoCommentsForm({ id, setComments }) {
+function PhotoCommentsForm({ id, setComments, single }) {
   const [comment, setComment] = React.useState("");
   const { request, error } = useFetch();
 
@@ -22,10 +22,16 @@ function PhotoCommentsForm({ id, setComments }) {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleCommentSubmit}>
-      <label htmlFor="comment" className={styles.label}> Faça seu Comentário</label>
+    <form
+      className={`${styles.form} ${single ? styles.single : ""}`}
+      onSubmit={handleCommentSubmit}
+    >
+      <label htmlFor="comment" className={styles.label}>
+        {" "}
+        Faça seu Comentário
+      </label>
       <textarea
-      className={styles.textarea}
+        className={styles.textarea}
         id="comment"
         name="comment"
         value={comment}
