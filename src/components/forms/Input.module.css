@@ -1,0 +1,23 @@
+.wrapper {
+  margin-bottom: var(--spacer-md);
+}
+.label {
+  display: block;
+  padding-bottom: var(--spacer);
+}
+.input {
+  border: none;
+  width: 100%;
+  padding-block: 20px;
+  padding: var(--spacer);
+  border-radius: var(--borderRadius-sm);
+  background-color: var(--color-primary20);
+  transition: var(--transition);
+}
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-bg);
+  box-shadow: var(--boxShadow-sm);
+}

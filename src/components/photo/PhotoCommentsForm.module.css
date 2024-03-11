@@ -1,19 +1,40 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    margin: var(--spacer-sm);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: stretch;
+  margin: var(--spacer);
 }
 .single.form {
-    margin-inline: 0;
+  margin-inline: 0;
 }
 .textarea {
-    display: block;
-    width: 100%;
-    border: none;
-    resize: none;
-    transition: var(--transition);
+  display: block;
+  width: 100%;
+  padding: var(--spacer);
+  border: none;
+  resize: none;
+  border-radius: var(--borderRadius-sm);
+  background-color: var(--color-primary20);
+  transition: var(--transition);
+}
+.textarea:focus,
+.textarea:hover {
+  outline: none;
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-primary20);
+  box-shadow: var(--boxShadow-sm);
+}
+.button {
+  border: none;
+  background-color: var(--color-primary);
+  border-radius: var(--borderRadius-sm);
+  cursor: pointer;
 }
 .button svg {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
+}
+.button:focus,
+.button:hover {
+  outline: none;
 }

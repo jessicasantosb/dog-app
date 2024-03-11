@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import styles from "./Photo.module.css";
 import useFetch from "../../hooks/useFetch";
 import { PHOTO_GET } from "../../Api";
 import Error from "../interfaces/Error";
@@ -21,7 +20,7 @@ function Photo() {
   if (loading) return <Loading />;
   if (data)
     return (
-      <section className="container">
+      <section className="container" style={{marginTop: '6rem'}}>
         <Head title={data.photo.title} />
         <PhotoContent single={true} data={data} />
       </section>

@@ -1,14 +1,10 @@
 # Dog App
 
-<h4 align="center"> 
-	🚧  Work in Progress...  🚧
-</h4>
-
 [Português]
-Trata-se de uma aplicação desenvolvida em React, com autenticação utilizando JSON Web Token.  
+Rede social Dogs, uma aplicação desenvolvida em React no curso da plataforma Origamid. Com autenticação utilizando JSON Web Token.
 
 [English]
-It is an application developed in React, featuring JSON Web Token authentication.
+Dogs social media, It is an application developed in React following Origamid course, featuring JSON Web Token authentication.
 
 ## Live Demo
 

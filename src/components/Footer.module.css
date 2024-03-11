@@ -1,8 +1,9 @@
 .footer {
-  padding-inline: var(--spacer);
-  padding-block: var(--spacer-lg);
+  width: 100%;
+  padding-block: var(--spacer-xl);
   box-shadow: var(--boxShadow-sm-top);
   text-align: center;
+  background-color: var(--color-secondary);
 }
 .logo svg {
   height: 40px;

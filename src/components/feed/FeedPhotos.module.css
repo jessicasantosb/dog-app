@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: var(--spacer);
-  margin-bottom: var(--spacer);
+  margin-top: var(--spacer);
 }
 
 @media screen and (max-width: 700px) {

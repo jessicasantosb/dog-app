@@ -19,10 +19,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
-            {/* protected route */}
-            <Route path="conta/*" element={<User />} />
             <Route path="foto/:id" element={<Photo />} />
             <Route path="perfil/:user" element={<UserProfile />} />
+            {/* protected route */}
+            <Route path="conta/*" element={<User />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

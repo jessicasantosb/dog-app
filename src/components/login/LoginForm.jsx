@@ -30,13 +30,13 @@ function LoginForm() {
         <Input label="Usuario" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
         {loading ? <Button disabled >Carregando...</Button> : <Button>Entrar</Button>}
-        <Error error={error} />
+        <Error error={error && 'Dados incorretos'} />
       </form>
       <Link className={styles.perdeu} to="/login/perdeu">
         Perdeu a senha?
       </Link>
-      <div className={styles.cadastroDiv}>
-        <h2 className={styles.cadastroText}>Cadastre-se</h2>
+      <div className={styles.cadastro}>
+        <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui uma conta? Cadastre-se no site.</p>
         <Link to={"/login/criar"}>
           <Button>Cadastro</Button>

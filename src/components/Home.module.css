@@ -1,3 +1,4 @@
 .home {
-    padding-top: var(--spacer-lg);
+    padding-block: var(--spacer-lg);
+    min-height: 100dvh;
 }

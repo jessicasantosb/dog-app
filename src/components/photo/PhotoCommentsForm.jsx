@@ -26,10 +26,6 @@ function PhotoCommentsForm({ id, setComments, single }) {
       className={`${styles.form} ${single ? styles.single : ""}`}
       onSubmit={handleCommentSubmit}
     >
-      <label htmlFor="comment" className={styles.label}>
-        {" "}
-        Faça seu Comentário
-      </label>
       <textarea
         className={styles.textarea}
         id="comment"

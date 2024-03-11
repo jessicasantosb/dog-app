@@ -1,7 +1,22 @@
 .button {
+  width: 150px;
   margin-block: var(--spacer-md);
   padding: var(--spacer);
   text-transform: uppercase;
   background-color: var(--color-secondary);
   cursor: pointer;
+  border: 0;
+  border-radius: var(--borderRadius-sm);
+  transition: background-color 0.24s, box-shadow 0.24s;
+}
+.button:hover, .button:focus {
+  background-color: var(--color-bg);
+  box-shadow: var(--boxShadow-sm);
+  outline: none;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
 }

@@ -23,7 +23,7 @@ function PhotoContent({ data, single }) {
             )}
             <span className={styles.visualizations}>{photo.acessos}</span>
           </p>
-          <h1 className="title">
+          <h1 className={`${styles.title} title`}>
             <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
           </h1>
           <ul className={styles.attributes}>

@@ -1,31 +1,39 @@
 .header {
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  box-shadow: var(--boxShadow-sm-bottom);
+  z-index: 1000;
 }
 .nav {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: var(--spacer);
-    box-shadow: var(--boxShadow-sm-bottom);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo svg {
-    height: 30px;
-    padding-right: var(--spacer);
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: var(--color-secondary);
+  border-radius: var(--borderRadius-lg);
 }
 .navLinks {
-    display: flex;
-    gap: var(--spacer-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-md);
 }
 .login::after {
-    content: '';
-    position: relative;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    top: 5px;
-    margin-left: var(--spacer);
-    background: url('../assets/user.svg') no-repeat center;
-    
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  margin-left: var(--spacer);
+  -webkit-mask: url("../assets/user.svg") no-repeat 50% 50%;
+  mask: url("../assets/user.svg") no-repeat 50% 50%;
+  background-color: var(--color-text);
 }
-    

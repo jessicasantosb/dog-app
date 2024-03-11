@@ -7,13 +7,15 @@
   left: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 999;
-  padding-inline: var(--spacer-lg);
+  padding-right: calc(var(--spacer-lg) + 15px);
+  padding-left: var(--spacer-lg);
   padding-block: var(--spacer-md);
 }
 
 @media screen and (max-width: 700px) {
   .modal {
-    padding-inline: var(--spacer-md);
+    padding-right: calc(var(--spacer-md) + 15px);
+    padding-left: var(--spacer-md);
     padding-block: var(--spacer);
   }
 }

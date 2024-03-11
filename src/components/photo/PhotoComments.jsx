@@ -16,8 +16,14 @@ function PhotoComments(props) {
             <span>{comment.comment_content}</span>
           </li>
         ))}
-        {login && <PhotoCommentsForm single={props.single} id={props.id} setComments={setComments} />}
       </ul>
+      {login && (
+        <PhotoCommentsForm
+          single={props.single}
+          id={props.id}
+          setComments={setComments}
+        />
+      )}
     </>
   );
 }

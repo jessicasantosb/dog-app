@@ -4,23 +4,28 @@
   gap: var(--spacer-md);
   margin-bottom: var(--spacer-md);
 }
+@media screen and (max-width: 700px) {
+  .userPost {
+    grid-template-columns: 1fr;
+  }
+}
 .file {
-    margin-bottom: var(--spacer);
+  margin-bottom: var(--spacer);
 }
 .preview {
-    border-radius: var(--borderRadius-sm);
-    background-size: cover;
-    background-position: center center;
+  border-radius: var(--borderRadius-sm);
+  background-size: cover;
+  background-position: center center;
 }
 .preview::after {
-    content: '';
-    display: block;
-    height: 0px;
-    padding-bottom: 100%;
+  content: "";
+  display: block;
+  height: 0px;
+  padding-bottom: 100%;
 }
 
 @media screen and (max-width: 700px) {
   .userPost {
     grid-template-columns: 1fr;
-  }    
+  }
 }

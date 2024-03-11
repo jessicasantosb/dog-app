@@ -7,7 +7,7 @@ function UserProfile() {
   const { user } = useParams();
 
   return (
-    <section className="container">
+    <section className='container' style={{marginTop: '7rem', marginBottom: 'var(--spacer-lg)'}} >
       <Head title={user} description='Página do usuário' />
       <h1 className="title">{user}</h1>
       <Feed user={user} />

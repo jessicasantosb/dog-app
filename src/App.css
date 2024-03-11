@@ -24,8 +24,6 @@
   --borderRadius-lg: 30em;
 
   --transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
-  --timingFunction: cubic-bezier(0.645, 0.045, 0.355, 1);
-  --transitionDuration: 250ms;
 
   --boxShadow-sm: 0 0.0625rem 0.125rem 0 rgba(3, 3, 3, 0.12),
     0 0 0.125rem 0 rgba(3, 3, 3, 0.06);
@@ -40,7 +38,6 @@
   --color-primary: #a07f6e;
   --color-primary20: hsl(20, 21%, 53%, 20%);
   --color-secondary: #bbc3a2;
-  --color-secondary5: hsl(75, 22%, 70%, 5%);
   --color-accent: #9db087;
   --color-text: #120e0c;
 }
@@ -58,7 +55,6 @@
   --color-primary: #916f5f;
   --color-primary20: hsl(19, 21%, 47%, 20%);
   --color-secondary: #555d3c;
-  --color-secondary5: hsl(75, 22%, 30%, 5%);
   --color-accent: #65784f;
   --color-text: #f3efed;
 }
@@ -110,20 +106,27 @@ input {
   display: block;
 }
 .container {
-  max-width: 1400px;
+  max-width: 50rem;
   padding-inline: 1rem;
   margin: 0 auto;
 }
 .title {
+  position: relative;
   font-family: var(--fontFamily-headings);
   font-size: var(--fontSize-lg);
   color: var(--color-primary);
 }
-.subtitle {
-  font-family: var(--fontFamily-headings);
-  font-size: var(--fontSize-md);
-  color: var(--color-primary);
-  opacity: 0.5;
+.title::after {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--color-secondary);
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  border-radius: 0.2rem;
+  z-index: -1;
 }
 .animeLeft {
   opacity: 0;

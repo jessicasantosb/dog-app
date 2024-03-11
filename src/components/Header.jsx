@@ -21,7 +21,7 @@ function Header() {
             </Link>
           ) : (
             <Link className={styles.login} to="/login">
-              Login / criar
+              Login / Criar
             </Link>
           )}
 

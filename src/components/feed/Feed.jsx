@@ -33,7 +33,7 @@ function Feed({ user }) {
   }, [infinite]);
 
   return (
-    <div>
+    <div style={{marginTop: '5em'}}>
       {modalPhoto && (
         <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />
       )}
@@ -46,6 +46,9 @@ function Feed({ user }) {
           setInfinite={setInfinite}
         />
       ))}
+      {!infinite && !user && (
+        <p style={{ textAlign: "center", paddingBlock: 'var(--spacer-md)' }}>Não existem mais postagens</p>
+      )}
     </div>
   );
 }

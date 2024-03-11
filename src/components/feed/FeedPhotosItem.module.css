@@ -22,20 +22,20 @@
   grid-area: 1 / 1;
   display: none;
   background: rgb(0, 0, 0, 0.3);
-  color: var(--color-bg);
+  color: white;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 .visualization::before {
-    content: '';
-    width: 25px;
-    height: 20px;
-    display: inline-block;
-    margin-right: var(--spacer);
-    background: url('../../assets/visualization.svg') no-repeat;
+  content: "";
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  margin-right: var(--spacer);
+  background: url('../../assets/visualization.svg') no-repeat;
 }
 .photo:hover .visualization {
-    display: flex;
+  display: flex;
 }

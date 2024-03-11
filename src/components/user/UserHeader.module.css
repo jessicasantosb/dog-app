@@ -50,7 +50,7 @@
   height: 4px;
   box-shadow: 0 8px currentColor, 0 -8px currentColor;
 }
-.navLink:nth-child(3) {
+.navLink:nth-child(3), .navLink:nth-child(4) {
   background: none;
   border: none;
   font-size: var(--fontSize-sm);
