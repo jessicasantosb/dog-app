@@ -9,12 +9,12 @@ Dogs social media, It is an application developed in React following Origamid co
 ## Live Demo
 
 [Português]
-Confira a demonstração ao vivo em breve
+Confira a demonstração ao vivo
 
 [English]
-Check out the live soon
+Check out the live demo
 
-[Live Preview]()
+[Live Preview](https://dog-app-jessicasantosb.vercel.app/)
 
 ## Screenshot
 
