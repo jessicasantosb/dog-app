@@ -1,11 +1,10 @@
 .comments {
   overflow-y: scroll;
   word-break: break-word;
-  padding: var(--spacer);
+  padding: var(--spacer-md);
+  height: clamp(5rem, 5vw, 10rem);
 }
 .comment {
   margin-bottom: 5px;
   line-height: 1.2;
 }
-
-  

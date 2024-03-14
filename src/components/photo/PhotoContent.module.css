@@ -1,8 +1,8 @@
 .photo {
-  height: 550px;
+  height: 500px;
   margin: auto;
   display: grid;
-  grid-template-columns: 550px 350px;
+  grid-template-columns: 500px 400px;
   grid-template-rows: auto 1fr auto;
   border-radius: var(--borderRadius-sm);
   background: var(--color-bg);
@@ -23,14 +23,18 @@
   height: auto;
 }
 .details {
-  padding-inline: var(--spacer);
+  padding-top: var(--spacer-md);
+  padding-inline: var(--spacer-md);
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 .img {
   grid-row: 1/4;
 }
 .single .img {
   grid-row: 1;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .author {
   display: flex;
@@ -42,7 +46,7 @@
   content: "";
   width: 25px;
   height: 20px;
-  top: 15px;
+  /* top: 15px; */
   display: inline-block;
   margin-right: var(--spacer);
   -webkit-mask: url("../../assets/visualization.svg") no-repeat 50% 50%;
@@ -55,6 +59,7 @@
 .attributes {
   display: flex;
   gap: var(--spacer-md);
+  padding-bottom: var(--spacer);
 }
 .attributes li:first-child::after {
   content: "";
@@ -67,11 +72,12 @@
   background-color: var(--color-secondary);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 64rem) {
   .photo {
     height: auto;
     max-height: calc(100vh - var(--spacer-lg));
-    grid-template-columns: minmax(200px, 400px);
+    grid-template-columns: minmax(400px, 300px);
+    overflow-y: auto;
   }
   .img {
     grid-row: 1;

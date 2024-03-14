@@ -1,8 +1,10 @@
 .form {
+  height: 40px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: stretch;
-  margin: var(--spacer);
+  gap: var(--spacer);
+  margin: var(--spacer-md);
 }
 .single.form {
   margin-inline: 0;

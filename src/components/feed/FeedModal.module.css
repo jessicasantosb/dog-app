@@ -8,14 +8,11 @@
   background: rgba(0, 0, 0, 0.4);
   z-index: 999;
   padding-right: calc(var(--spacer-lg) + 15px);
-  padding-left: var(--spacer-lg);
-  padding-block: var(--spacer-md);
+  padding: 5rem calc(4rem + 15px) 2rem 4rem;
 }
 
 @media screen and (max-width: 700px) {
   .modal {
-    padding-right: calc(var(--spacer-md) + 15px);
-    padding-left: var(--spacer-md);
-    padding-block: var(--spacer);
+    padding: 3rem calc(2rem + 15px) 2rem 2rem;
   }
 }
