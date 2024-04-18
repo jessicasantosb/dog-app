@@ -12,7 +12,9 @@ function PhotoContent({ data, single }) {
 
   return (
     <div className={`${styles.photo} ${single ? styles.single : ""}`}>
-      <Image className={styles.img} src={photo.src} alt={photo.title} />
+      <div className={styles.img} >
+        <Image src={photo.src} alt={photo.title} />
+      </div>
       <div className={styles.details}>
         <div>
           <p className={styles.author}>
