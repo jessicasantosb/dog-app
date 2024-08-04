@@ -6,6 +6,14 @@ Rede social Dogs, uma aplicação desenvolvida em React no curso da plataforma O
 [English]
 Dogs social media, It is an application developed in React following Origamid course, featuring JSON Web Token authentication.
 
+## Getting Started
+Para começar no Dog App, siga estes passos:
+
+1. Clonar o repositório: **`git clone https://github.com/jessicasantosb/dog-app.git`**
+2. Entrar na pasta do projeto: **`cd dog-app`**
+3. Instalar as dependências: **`npm i`**
+4. Iniciar o aplicativo: **`npm run dev`**
+
 ## Live Demo
 
 [Português]
@@ -18,7 +26,7 @@ Check out the live demo
 
 ## Screenshot
 
-![Home Page]()
+![Home Page](src/assets/screenshot.png)
 
 ## Technology Stack
 
